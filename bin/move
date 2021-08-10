@@ -24,13 +24,14 @@ input = gets.strip
 # convert the user's input to an array index using our 
 # #input_to_index method and store this as the variable index.
 
+index = input_to_index(input)
 
 # call our #move method. Do so with the arguments of the board, 
 # the index the user wants to access and the default player of "X".
 
-move(board, index, value)
+move(board, index)
 
 # display the board by calling the #display_board method, passing in 
 # the necessary arguments required to run this method.
 
-display_board(board )
+display_board(board)

@@ -11,7 +11,7 @@ def input_to_index(input) # takes user input which is an argument of string 1-9
   input.to_i - 1 #subtracts 1 because index starts at 0
 end
 
-def move(board, index, value="X") #takes 3 arguments, the board array, 
+def move(board, input, value="X") #takes 3 arguments, the board array, 
   # the index in the board array that the player 
   # would like to fill out with an "X" or an "O", 
   # and the player's character (either "X" or "O"). 
@@ -21,13 +21,10 @@ def move(board, index, value="X") #takes 3 arguments, the board array,
   # def update_array_at_with(array, index, value)
   # array[index] = value
   # end
-  def update_array_at_with(board, index, value="X")
-    board[index] = value
-  end
-
+  
+  board[input] = value
   # update_array_at_with(board, 0, "X")
   # The element at index 0 of array 'board' is set to the value "X"
   # board #=> ["X", " ", " "] 
-  update_array_at_with(board, index, value)
 
 end
